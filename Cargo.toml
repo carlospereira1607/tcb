@@ -1,0 +1,22 @@
+[package]
+name = "tcb"
+version = "0.1.0"
+authors = ["Carlos Pereira <carloscdap@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["causal-order", "causal-delivery", "causal-stability"]
+categories = ["concurrency", "broadcast", "middleware"]
+description = "A middleware service for delivering messages in a causal order."
+repository = "https://github.com/carlospereira1607/tcb"
+homepage = "https://github.com/carlospereira1607/tcb"
+
+[dependencies]
+crossbeam = "*"
+serde_derive = "*"
+bincode = "*"
+serde = "*"
+smallvec = "*"
+bit-vec = "*"
+petgraph = "*"
+toml = "*"

@@ -1,0 +1,28 @@
+#--------------------------------------------------------
+#       EXAMPLE OF A MIDDLEWARE CONFIGURATION FILE
+#--------------------------------------------------------
+
+#Stack size of spawned threads in bytes
+thread_stack_size = 50000
+
+#Stack size of the middleware thread in bytes
+middleware_thread_stack_size = 500000
+
+#Timeout in microseconds used by the Sender for reading from the channel
+stream_sender_timeout = 1000000
+
+#Stability calculation flag
+track_causal_stability = true
+
+#Parameters that set message batching
+[batching]
+    #Bytes to be buffered
+    size = 1000
+    #Messages to be buffered
+    message_number = 10
+    #Lower timeout in microseconds during no messages period
+    lower_timeout = 100000000
+    #Upper timeout in microseconds during no messages period
+    upper_timeout = 500000000
+
+
