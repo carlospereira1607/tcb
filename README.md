@@ -2,7 +2,8 @@
 https://github.com/carlospereira1607/TCB)
 [![Rust 1.28+](https://img.shields.io/badge/rust-1.28+-lightgray.svg)](
 https://www.rust-lang.org)
-
+[![Cargo](https://img.shields.io/badge/crates.io-0.1.0-orange)](
+https://crates.io/crates/tcb)
 # TCB
 A Tagged Causal Broadcast middleware service in Rust.
 
