@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](
 https://github.com/carlospereira1607/TCB)
-[![Rust 1.28+](https://img.shields.io/badge/rust-1.28+-lightgray.svg)](
+[![Rust 1.36+](https://img.shields.io/badge/rust-1.36+-lightgray.svg)](
 https://www.rust-lang.org)
 [![Cargo](https://img.shields.io/badge/crates.io-0.1.20-orange)](
 https://crates.io/crates/tcb)
