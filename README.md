@@ -2,10 +2,10 @@
 https://github.com/carlospereira1607/TCB)
 [![Rust 1.36+](https://img.shields.io/badge/rust-1.36+-lightgray.svg)](
 https://www.rust-lang.org)
-[![Cargo](https://img.shields.io/badge/crates.io-0.1.20-orange)](
+[![Cargo](https://img.shields.io/badge/crates.io-0.1.202-orange)](
 https://crates.io/crates/tcb)
-[![Cargo](https://img.shields.io/badge/docs-0.1.20-blue)](
-https://docs.rs/tcb/0.1.20/tcb/)
+[![Cargo](https://img.shields.io/badge/docs-0.1.202-blue)](
+https://docs.rs/tcb/0.1.202/tcb/)
 
 # TCB
 A Tagged Causal Broadcast middleware service in Rust.
@@ -41,7 +41,7 @@ First add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-tcb = "0.1.201"
+tcb = "0.1.202"
 ```
 
 Before a middleware instance can be created, each peer must have the following:
