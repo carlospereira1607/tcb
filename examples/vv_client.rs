@@ -4,6 +4,15 @@ use tcb::broadcast::broadcast_trait::TCB;
 use tcb::configuration::middleware_configuration::read_configuration_file;
 use tcb::vv::version_vector::VV;
 
+/**
+ * The VV approach uses version vectors to determine causal dependencies between messages.
+ * Each received message's version vector is checked to see if it can be delivered.
+ * If not, then the message is added to a queue, waiting for the delivery of its dependencies.
+ * However, if the message is delivered, the queue is also traversed as to deliver other messages
+ * that couldn't be delivered before.   
+ * Unlike the GRAPH approach, there isn't the need by the client to ack stable messages by calling
+ * the tcbstable method.
+ */
 fn main() -> Result<(), Box<dyn Error>> {
     //String with the path to the configuration file
     let configuration_file = format!("path-to-config-file.toml");

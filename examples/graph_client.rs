@@ -7,9 +7,12 @@ use tcb::graph::graph::GRAPH;
 /**
  * The GRAPH approach uses a graph to determine causal dependencies between messages.
  * This graph was mapped as an array, as to keep locality between nodes.
- * Moreover, the element's in this graph are softly deleted as to reuse their positions
+ * Moreover, the elements in this graph are softly deleted as to reuse their positions
  * for other messages. If stability is being calculated, then it's necessary to call
- * tcbstable so its position can be marked as available to be reused.
+ * tcbstable so its position can be marked as available to be reused. Otherwise, the graph
+ * exponentially grows and so does the array. However, if stability is disabled in the
+ * configuration file, callinng tcbstable is not necessary as messages are removed from the
+ * graph as they are delivered.
  */
 fn main() -> Result<(), Box<dyn Error>> {
     //String with the path to the configuration file

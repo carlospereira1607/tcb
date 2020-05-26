@@ -200,7 +200,7 @@ impl TCB for VV {
      *
      * # Arguments
      *
-     * `msg` - Serialized message to be broadcast
+     * `message` - Serialized message to be broadcast
      */
     fn send(&mut self, message: Vec<u8>) -> Self::SendCallReturn {
         self.message_id += 1;
