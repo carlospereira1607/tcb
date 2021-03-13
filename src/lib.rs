@@ -1,4 +1,4 @@
-//! A causal broadcast middleware service.
+//! A middleware service for delivering messages in a causal order.
 extern crate bincode;
 extern crate bit_vec;
 extern crate crossbeam;
