@@ -1,6 +1,6 @@
 [package]
 name = "tcb"
-version = "0.1.202"
+version = "0.1.3"
 authors = ["Carlos Pereira <carloscdap@gmail.com>"]
 edition = "2018"
 readme = "README.md"
@@ -12,11 +12,11 @@ repository = "https://github.com/carlospereira1607/tcb"
 homepage = "https://github.com/carlospereira1607/tcb"
 
 [dependencies]
-crossbeam = "0.7"
-serde_derive = "1.0"
-bincode = "1.2.1"
-serde = "1.0.110"
-smallvec = "1.4.0"
-bit-vec = "0.6.2"
-petgraph = "0.5.1"
-toml = "0.5.6"
+crossbeam = "*"
+serde_derive = "*"
+bincode = "*"
+serde = "*"
+smallvec = "*"
+bit-vec = "*"
+petgraph = "*"
+toml = "*"
